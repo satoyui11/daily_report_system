@@ -17,8 +17,10 @@ public class ReportValidator {
         }
 
         String contentError = validateContent(rv.getContent());
-        if (!contentError.equals(""))
-            ;
+        if (!contentError.equals("")) {
+            errors.add(contentError);
+        }
+        
     return errors;
 
 }
